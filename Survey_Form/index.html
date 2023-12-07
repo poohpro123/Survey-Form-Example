@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="icon" type="img/x-icon" href="./imgs/icon_favicon.png">
+    <link rel="stylesheet" href="./css/styleindex.css">
+</head>
+<body>
+    <h1>Survey Form</h1>
+
+    <div class="form">
+        <form>
+            <!--Enter name-->
+            <div class="form-control">
+                <label for="name" id="label-name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+
+            <!--Enter mail-->
+            <div class="form-control">
+                <label for="email" id="label-mail">Email</label>
+                <input type="email" id="mail" placeholder="Enter your mail">
+            </div>
+
+            <!--Enter your age-->
+            <div class="form-control">
+                <label for="age" id="label-age">Age</label>
+                <input type="number" id="age" placeholder="Enter your age">
+            </div>
+
+            <!--Job-->
+            <div class="form-control">
+                <label for="job" id="label-job">Which option best describes you?</label>
+                <select>
+                    <option value="student">Student</option>
+                    <option value="itern">Intern</option>
+                    <option value="junior">Junior</option>
+                    <option value="senior">Senior</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!--Recommend-->
+            <div class="form-control">
+                <label for="recommend" id="label-recommend">Would you recommend this site to your friend?</label>
+
+                <!--Options-->
+                <label for="recommed-1">
+                    <input type="radio"
+                           id="recommed-1"
+                           name="recommed">Yes</input>
+                </label>
+
+                <label for="recommed-2">
+                    <input type="radio"
+                           id="recommed-2"
+                           name="recommed">No</input>
+                </label>
+
+                <label for="recommed-3">
+                    <input type="radio"
+                           id="recommed-3"
+                           name="recommed">Maybe</input>
+                </label>
+            </div>
+
+            <!--Language-->
+            <div class="form-control">
+                <label>Languages and Frameworks you know </label>
+                <small>(Check all that apply)</small>
+
+                <label for="inp-1">
+                    <input type="checkbox" name="inp">C</input>
+                </label>
+
+                <label for="inp-1">
+                    <input type="checkbox" name="inp">C++</input>
+                </label>
+
+                <label for="inp-1">
+                    <input type="checkbox" name="inp">Java</input>
+                </label>
+
+                <label for="inp-1">
+                    <input type="checkbox" name="inp">SQL</input>
+                </label>
+
+                <label for="inp-1">
+                    <input type="checkbox" name="inp">JavaScript</input>
+                </label>
+
+                <label for="inp-1">
+                    <input type="checkbox" name="inp">Python</input>
+                </label>
+            </div>
+
+            <!--Comment or suggestion-->
+            <div class="form-control">
+                <label for="comment">Any comment or suggestion?</label>
+                <!-- multi-line text input control -->
+                <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+                </textarea>
+            </div>
+
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
